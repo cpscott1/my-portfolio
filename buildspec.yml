@@ -1,8 +1,10 @@
 version: 0.2
 
-run-as: Cam_Perry
 
 phases:
+  install:
+    runtime-versions:
+      2.0
   build:
     commands:
       - echo Nothing to do yet
