@@ -1,0 +1,14 @@
+version: 0.1
+
+phases:
+  build:
+    commands:
+      - echo Nothing to do yet
+artifacts:
+  files:
+    - assets/*
+    - images/*
+    - index.html
+    - main.css
+    - main.css.map
+    - README.md
