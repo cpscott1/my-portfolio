@@ -5,8 +5,8 @@
 @import 'libs/breakpoints';
 @import 'libs/html-grid';
 @import url('fontawesome-all.min.css');
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic");
-@import url("https://fonts.googleapis.com/css?family=Work+Sans:900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat|Source+Sans+Pro:400,400i|Work+Sans:900&display=swap");
+
 
 
 
@@ -151,6 +151,7 @@ $size-header-pad: 4em;
 
 	p {
 		margin: 0 0 _size(element-margin) 0;
+		font-family: 'Montserrat', sans-serif;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
@@ -745,6 +746,8 @@ $size-header-pad: 4em;
 			display: inline-block;
 			padding: 0 1em 0 0;
 
+
+
 			&:last-child {
 				padding-right: 0;
 			}
@@ -752,6 +755,15 @@ $size-header-pad: 4em;
 			.icon {
 				&:before {
 					font-size: 1.5em;
+					color: #FBFBFB;
+
+					@media (min-width: 1150px) {
+						position: relative;
+						bottom: 1em;
+						left: 6.5em;
+
+					}
+
 				}
 			}
 		}
@@ -1051,7 +1063,8 @@ $size-header-pad: 4em;
 		}
 
 		h3 {
-			font-size: 1em;
+			font-size: 1.5em;
+			font-family: 'Montserrat', sans-serif;
 			margin: 0 0 (_size(element-margin) * 0.25) 0;
 		}
 
@@ -1077,10 +1090,29 @@ $size-header-pad: 4em;
 		text-align: right;
 		top: 0;
 		width: $size-header-width;
-
+		h3 {
+			font-size: 1.5em;
+			font-family: 'Montserrat', sans-serif;
+			@media (min-width: 1150px) {
+				position: relative;
+				right: 6.3em;
+			}
+		}
 		.name {
 			font-family: 'Work Sans', sans-serif;
 			font-size: 4rem;
+			@media (min-width: 1150px) {
+				position: relative;
+				right: .7em;
+			}
+		}
+		.dev {
+			font-family: 'Montserrat', sans-serif;
+
+			@media (min-width: 1150px) {
+				position: relative;
+				right: .9em;
+			}
 		}
 
 		> * {
@@ -1126,7 +1158,7 @@ $size-header-pad: 4em;
 		}
 
 		.copyright {
-			color: _palette(accent2, fg-light);
+			color: #fff;
 			font-size: 0.8em;
 			list-style: none;
 			margin: (_size(element-margin) * 0.5) 0 0 0;
@@ -1186,6 +1218,16 @@ $size-header-pad: 4em;
 		}
 	}
 
+	#three {
+		p {
+			font-size: 1.2em;
+		}
+		h2 {
+			font-size: 2.5rem;
+			font-family: 'Work Sans', sans-serif;
+			color: #0B9BEF;
+		}
+	}
 /* Poptrox */
 
 	@include keyframes('spin') {
@@ -1395,12 +1437,32 @@ $size-header-pad: 4em;
 
 				> .inner {
 					margin-bottom: 0;
+					h3 {
+						position: relative;
+						right: 3.5em;
+					}
+					.name {
+						font-size: 2.7em;
+						position: relative;
+						right: .7em;
+					}
+					.dev {
+						font-size: 1.1em;
+
+					}
 				}
 			}
 
 		/* Footer */
 
 			#footer {
+				.icons {
+					.icon {
+						position: relative;
+						left: 5.6em;
+						bottom: 9em;
+					}
+				}
 				.copyright {
 					li {
 						border-left-width: 0;
@@ -1463,7 +1525,7 @@ $size-header-pad: 4em;
 				width: 100%;
 				display: block;
 
-				h1 {
+				h3 {
 					font-size: 1.75em;
 
 					br {
@@ -1474,10 +1536,10 @@ $size-header-pad: 4em;
 
 		/* Footer */
 
+
 			#footer {
 				background-attachment:	scroll;
-				background-color:		_palette(accent2, bg);
-				background-image:		url('images/overlay.png'),		url('../../images/bg.jpg');
+				background-color:		 #0B9BEF;
 				background-position:	top left,						bottom center;
 				background-repeat:		repeat,							no-repeat;
 				background-size:		auto,							cover;
@@ -1496,6 +1558,7 @@ $size-header-pad: 4em;
 					margin: 0 0 (_size(element-margin) * 0.5) 0;
 
 					li {
+						color: white;
 						border-left-width: 1px;
 						display: inline-block;
 						line-height: 1em;
@@ -1589,21 +1652,16 @@ $size-header-pad: 4em;
 				> section {
 					margin: ($size-header-pad * 1.5) 0 0 0;
 					padding: ($size-header-pad * 1.5) 0 0 0;
-				}
-			}
-
-		/* Poptrox */
-
-			.poptrox-popup {
-				border-radius: 0;
-
-				.nav-next,
-				.nav-previous {
-					&:before {
-						margin-top: -1em;
+					h2 {
+						font-size: 2em;
 					}
 				}
 			}
+
+
+
+		/* Poptrox */
+
 
 	}
 
