@@ -61,7 +61,7 @@
     "meow": "^3.7.0",
     "mime-db": "^1.12.0",
     "mime-types": "^2.0.14",
-    "minimist": "^1.2.0",
+    "minimist": "^1.2.2",
     "mkdirp": "^0.5.1",
     "findup-sync": "^0.3.0",
     "nopt": "^3.0.6",
