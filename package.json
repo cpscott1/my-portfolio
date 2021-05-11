@@ -42,7 +42,7 @@
     "grunt-legacy-log-utils": "^2.0.1",
     "has-flag": "^3.0.0",
     "grunt-legacy-util": "^1.1.1",
-    "hosted-git-info": "^2.8.2",
+    "hosted-git-info": "^2.8.9",
     "iconv-lite": "^0.4.24",
     "indent-string": "^2.1.0",
     "hooker": "^0.2.3",
