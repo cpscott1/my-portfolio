@@ -95,7 +95,7 @@
     "spdx-expression-parse": "^3.0.0",
     "supports-color": "^5.5.0",
     "spdx-exceptions": "^2.2.0",
-    "trim-newlines": "^1.0.0",
+    "trim-newlines": "^3.0.1",
     "underscore.string": "^3.3.5",
     "strip-indent": "^1.0.1",
     "strip-bom": "^2.0.0",
