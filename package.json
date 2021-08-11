@@ -72,7 +72,7 @@
     "once": "^1.4.0",
     "path-exists": "^2.1.0",
     "path-is-absolute": "^1.0.1",
-    "path-parse": "^1.0.6",
+    "path-parse": "^1.0.7",
     "path-type": "^1.1.0",
     "pinkie": "^2.0.4",
     "pify": "^2.3.0",
