@@ -108,7 +108,7 @@
     "xmlbuilder": "^0.4.2"
   },
   "devDependencies": {
-    "grunt": "^1.0.4",
+    "grunt": "^1.5.2",
     "grunt-aws": "^0.7.1",
     "grunt-aws-s3": "^2.0.1"
   },
